@@ -1,13 +1,13 @@
-const valor;
+var numeros ="";
 function inserir(num){ 
-   const numero = document.querySelector("#valor").innerHTML
-   valor = document.querySelector("#valor").innerHTML = numero + num;
+   var numero = document.querySelector("#valor").innerHTML
+   numeros = document.querySelector("#valor").innerHTML = numero + num;
 }
 function limpar(){ 
     document.querySelector("#valor").innerHTML ="";
  }
 
 function igual(){
-   const resultado = eval(valor);
+   var resultado = eval(numeros);
    document.querySelector("#valor").innerHTML = resultado
 }
